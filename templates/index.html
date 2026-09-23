@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Personal Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Tambahan CSS untuk Background Image -->
+    <style>
+        body {
+            /* Panggil background dari folder static/asset/ */
+            background-image: url("{{ url_for('static', filename='asset/thomas-fatin-6oBUCu9FIOc-unsplash.jpg') }}");
+            
+            /* Biar gambarnya nutupin seluruh layar full */
+            background-size: cover; 
+            
+            /* Posisinya selalu di tengah */
+            background-position: center center; 
+            
+            /* Biar gambarnya nggak berulang (tiling) */
+            background-repeat: no-repeat; 
+            
+            /* Biar kalau di-scroll, gambarnya tetep diem di tempat (opsional) */
+            background-attachment: fixed; 
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Menu Navigasi -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="https://www.linkedin.com/in/farrelinorendy/">LinkedIn</a>
+        <a href="https://www.instagram.com/farrelinorendy/">Instragram</a>
+    </nav>
+
+    <div class="container">
+        <!-- Ganti link ini dengan foto asli lo nantinya -->
+        <img src="{{ url_for('static', filename='asset/pp-linkedin - Copy.jpg') }}" alt="Foto Profil" class="profile-img">
+        
+        <h1>Hello! I'm Farrelino Rendy</h1>
+        
+        <p class="bio">
+            Marine Science and Technology undergraduate specializing in autonomous marine vehicle (AUV/ASV) programming and Python-driven marine data analysis. Proven technical capability leveraging Python (Computer Vision, Machine Learning) and digital signal processing to analyze subsea environments, complemented by experience in SonarWiz 8 for hydrographic surveys. Combines hands-on hardware integration skills including PID tuning, telemetry, and acoustic payloads with strong commercial awareness, data driven strategy, and cross-functional project management developed through international consulting leadership.
+        </p>
+    </div>
+</body>
+</html>
