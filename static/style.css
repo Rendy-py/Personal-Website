@@ -111,7 +111,7 @@ nav a:hover {
 /* Kartu Project */
 .project-card {
     flex: 0 0 300px; /* Lebar box selalu 300px, gak akan mengecil */
-    background-color: white;
+    background-color: rgb(10, 131, 219);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -133,7 +133,7 @@ nav a:hover {
 }
 .project-info h3 {
     margin: 0 0 10px 0;
-    color: #2c3e50;
+    color: #ffffff;
 }
 .project-info p {
     margin: 0;
