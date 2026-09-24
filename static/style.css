@@ -20,6 +20,10 @@ nav a {
     font-size: 1.1rem;
     font-weight: bold;
     transition: color 0.3s;
+
+nav a:hover {
+    color: #1abc9c; }
+    
 }
 nav a {
     text-decoration: none;
