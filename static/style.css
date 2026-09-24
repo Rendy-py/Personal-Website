@@ -25,6 +25,38 @@ nav a:hover {
     color: #1abc9c;
 }
 
+a {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #1abc9c;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  animation: heartbeat116 1.5s ease-in-out 0.3s infinite;
+}
+
+@keyframes heartbeat116 {
+  0%, 100% {
+    width: 100%;
+  }
+  50% {
+    width: 60%;
+  }
+}
+
+
 /* Wadah Utama dengan Efek Glassmorphism */
 .container {
     max-width: 900px;
