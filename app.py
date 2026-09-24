@@ -22,11 +22,11 @@ def projects():
 
         {"name": "YOLO Hand Tracking",
          "desc": "Servo etc...",
-         "image": "https://via.placeholder.com/300x200?text=Project+Gamma"},
+         "image": "asset/robot.jpg"},
 
         {"name": "Underwater Acoustic Side-Scan Sonar Analysis",
          "desc": "Conducted secondary data analysis on a pre-existing 2021 hydrographic survey dataset collected for submarine optical cable installation using SonarWiz 8. Performed advanced quantitative acoustic analysis using Continuous Wavelet Transform (CWT) and amplitude analysis to isolate, characterize, and classify specific seabed features. Extracted and evaluated acoustic signatures from the provided bathymetric and topographic data to identify potential subsea anomalies, demonstrating strong proficiency in digital signal processing, acoustic data interpretation, and hydrographic survey analysis.",
-         "image": "https://via.placeholder.com/300x200?text=Project+Delta"},
+         "image": "asset/sss.jpg"},
     ]
     return render_template('projects.html', projects=my_projects)
 
